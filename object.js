@@ -37,7 +37,18 @@ const recipe = {
        tomatoes: "3. Fresh or canned tomatoes",
        spices: "4. Thyme, curry powder, garlic, ginger, salt and seasoning cubes",
        otherThings: "5. Onions, Groundnut oil and Bay leaves"
-    }
+    },
+    
+    totalCooking: function () { 
+        return `This ${this.nameOfFood} is a ${this.type}, prepared in ${this.prepTime} minutes and it is a ${this.category}.
+        The ingredients used are;
+        ${this.ingredients.rice}, 
+        ${this.ingredients.bellPeppers}, 
+        ${this.ingredients.tomatoes},
+        ${this.ingredients.spices}, 
+        ${this.ingredients.otherThings}.`;    
+    },
+
     };
 
     recipe["nameOfFood"] = "Jellof Rice and Chicken",
@@ -46,16 +57,7 @@ const recipe = {
     recipe["category"] = "Dinner";
 
 
-    recipe["totalJellofRice"] = function () { 
-        return `This ${this.nameOfFood} is a ${this.type}, prepared in ${this.prepTime} minutes and it is a ${this.category}.
-        The ingredients used are;
-        ${this.ingredients.rice}, 
-        ${this.ingredients.bellPeppers}, 
-        ${this.ingredients.tomatoes},
-        ${this.ingredients.spices}, 
-        ${this.ingredients.otherThings}.`;    
-    };
-
+    
 
 // ACCESSING ITS PROPERTIES USING SQUARE BRACKETS
 console.log("The total recipe:", recipe);
@@ -116,4 +118,3 @@ const person = {
 
 console.log(person.allAboutMe());
 console.log(person);
-
