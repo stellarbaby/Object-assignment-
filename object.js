@@ -98,3 +98,22 @@ console.log("A sentence about planet:", planet.allABoutPlanet());
 console.log(planet["atmosphere"])
 console.log(planet.atmosphere["features"]);
 console.log(planet.atmosphere.nature);
+
+
+const person = {
+
+    names : {
+       firstName: "Oluwatobiloba",
+       lastName: "Stellar Heritage",
+       department: "Law",
+       },
+
+    allAboutMe : function () {
+        return `This girl called ${this.names.lastName} is a ${this.names.department} student.`
+          },
+
+};
+
+console.log(person.allAboutMe());
+console.log(person);
+
